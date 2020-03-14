@@ -42,11 +42,11 @@ public class Department
 
     //Annotation used for lifecycle method. @PostConstruct as init() and @PreDestroy as destroy()
     @PostConstruct
-    protected void f1(){
+    protected void init(){
         System.out.println(getClass()+" init()");
     }
     @PreDestroy
-    protected void f2(){
+    protected void destroy(){
         System.out.println(getClass()+" destroy()");
     }
 
